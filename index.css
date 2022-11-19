@@ -1,0 +1,255 @@
+a, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, body, html, p, blockquote, fieldset, input, button {
+    margin: 0;
+    padding: 0;
+  }
+  
+html {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+  
+*, *:before, *:after {
+    box-sizing: inherit
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #2E2E2F;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.container {
+    background-color: white;
+    max-width: 700px;
+    min-height: 100vh;
+    margin: 0 auto;
+}
+
+.header {
+    height: 230px;
+    padding: 0 20px;
+    
+    background: linear-gradient(#34343445, #2c2c2c6e), url(/images/felix-mooneeram-evlkOfkQ5rE-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-text {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: -40px;
+}
+
+.title, .header-link {
+    color: white;
+}
+
+
+.search-bar {
+    width: 100%;
+    margin-top: -20px;
+    text-align: center;
+    height: 40px;
+    padding: 0 20px;
+}
+
+.search-bar input {
+    height: 100%;
+    width: 75%;
+    padding-left: 35px;
+    border: 1px solid #D1D5DB;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background-image: url(/images/icon-search-no-bg.svg);
+    background-repeat: no-repeat;
+    background-position: 10px center;
+}
+
+
+.search-bar button {
+    cursor: pointer;
+    color: #374151;
+    font-weight: 600;
+    height: 100%;
+    width: 25%;
+    margin-left: -5px;
+    border: 1px solid #D1D5DB;
+    background-color: #F9FAFB;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.content {
+    padding: 40px 0;
+}
+
+.placeholder-text {
+    text-align: center;
+    margin-top: 35%;
+    color: #DFDDDD;
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.info-link {
+    color: #363636;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.info-link img {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.movie-item {
+    display: flex;
+    position: relative;
+    padding: 10px 5px;
+    border-bottom: 1px solid #E5E7EB;
+}
+
+.movie-item:last-child {
+    border-bottom: none;
+}
+
+.movie-poster {
+    width: 20%;
+    align-self: flex-start;
+    border-radius: 3px;
+}
+
+.movie-info {
+    width: 80%;
+    padding-left: 5px;
+    font-size: 12px;
+    color: #111827;
+}
+
+.movie-meta span {
+    padding-right: 5px;
+}
+
+.movie-info button {
+    border: none;
+    background-color: transparent;
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+}
+
+.movie-info button img {
+   height: 15px;
+   padding-right: 5px;
+}
+
+.movie-title {
+    padding-bottom: 5px;
+}
+
+.movie-year {
+    font-weight: 400;
+}
+
+.movie-genre {
+    display: block;
+    padding: 5px 0;
+}
+
+.movie-plot {
+    padding-top: 5px;
+    font-size: 14px;
+    color: #6B7280;
+    line-height: 1.4;
+}
+
+@media screen and (min-width: 480px){
+    .header, .search-bar {
+        padding: 0 30px;
+    }
+
+    .movie-item {
+        padding: 30px;
+    }
+
+    .movie-poster {
+        width: 25%;
+    }
+
+    .movie-info {
+        width: 75%;
+        padding-left: 20px;
+    }
+
+    .movie-info button {
+        margin-left: auto;
+    }
+
+    .movie-title {
+        padding-bottom: 10px;
+    }
+
+    .movie-meta {
+        display: flex;
+    }
+
+    .movie-genre {
+        display: inline;
+        padding: 0;
+    }
+
+    .movie-plot {
+        padding-top: 10px;
+    
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .header, .search-bar {
+        padding: 0 50px;
+    }
+
+    .movie-item {
+        padding: 30px 50px;
+    }
+
+    .movie-info {
+        font-size: 14px;
+        padding-left: 30px;
+    }
+
+    .movie-meta span {
+        padding-right: 10px;
+    }
+
+    .movie-title {
+        padding-bottom: 15px;
+    }
+
+    .movie-plot {
+        font-size: 16px;
+        padding-top: 15px;
+    }
+    
+}
+
+@media screen and (orientation: landscape) {
+    .container {
+        margin: 30px auto;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+}
