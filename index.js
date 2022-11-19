@@ -40,7 +40,7 @@ function removeFromWatchlist(id) {
 
 async function getSearchData(searchQuery) {
 	const searchResponse = await fetch(
-		`http://www.omdbapi.com/?s=${searchQuery}&type=movie&apikey=${apikey}`
+		`https://www.omdbapi.com/?s=${searchQuery}&type=movie&apikey=${apikey}`
 	)
 	const searchData = await searchResponse.json()
 	return searchData
@@ -48,7 +48,7 @@ async function getSearchData(searchQuery) {
 
 async function getMovieData(movieId) {
 	const movieResponse = await fetch(
-		`http://www.omdbapi.com/?i=${movieId}&apikey=${apikey}`
+		`https://www.omdbapi.com/?i=${movieId}&apikey=${apikey}`
 	)
 	const movieData = await movieResponse.json()
 	return movieData
