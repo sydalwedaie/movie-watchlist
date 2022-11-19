@@ -81,7 +81,7 @@ Other stuff
 ### Continued development
 
 -   Add a _Next Page_ function to the search results
--   Make the ap a PWA
+-   Make the site a PWA
 
 ## Acknowledgments
 
